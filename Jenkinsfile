@@ -13,7 +13,6 @@ pipeline {
     stages {
         stage('Tests') {
             steps {
-                deleteDir()
                 usexvfb()
                 downloadChromeDriver()
                 sh 'mvn clean test'
