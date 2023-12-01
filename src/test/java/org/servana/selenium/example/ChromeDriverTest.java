@@ -20,7 +20,7 @@ public class ChromeDriverTest {
         //setup chromedriver
         System.setProperty(
                 "webdriver.chrome.driver",
-                "chromedriver-linux64/chromedriver ");
+                "chromedriver-linux64/chromedriver");
         chromeOptions.setBinary("/usr/bin/google-chrome-stable");
         testUrl = "https://google.com";
         ChromeOptions options = new ChromeOptions();
