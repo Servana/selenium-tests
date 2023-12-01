@@ -22,7 +22,6 @@ public class ChromeDriverTest {
                 "webdriver.chrome.driver",
                 "/usr/bin/google-chrome");
         System.setProperty("DISPLAY", ":99");
-        environment.put("DISPLAY", ":99");
         testUrl = "https://google.com";
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
