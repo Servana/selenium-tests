@@ -48,5 +48,3 @@ public class ChromeDriverTest {
     }
 
 }
-
-116.0.5845.179
