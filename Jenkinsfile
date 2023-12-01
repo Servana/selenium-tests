@@ -30,7 +30,7 @@ pipeline {
 
 def usexvfb(){
     sh """
-        sudo apt-get update && sudo apt-get install ffmpeg -y
+        sudo apt-get update && sudo apt-get install Xvfb ffmpeg -y
         Xvfb :99 -ac -screen 0 1280x1024x24 &
         ffmpeg -f x11grab -i :99 -c:v libx264 -preset ultrafast -tune zerolatency -crf 25 ./${VIDEO_FILE_NAME} &
     """
