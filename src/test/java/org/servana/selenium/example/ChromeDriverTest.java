@@ -25,7 +25,7 @@ public class ChromeDriverTest {
         testUrl = "https://google.com";
         ChromeOptions options = new ChromeOptions();
         options.setBinary("/usr/bin/google-chrome-stable");
-        options.addArguments("--headless=new");
+        // options.addArguments("--headless=new");
 
         driver = new ChromeDriver(options);
 
