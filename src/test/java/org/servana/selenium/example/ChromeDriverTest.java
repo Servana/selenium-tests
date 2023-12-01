@@ -21,9 +21,9 @@ public class ChromeDriverTest {
         System.setProperty(
                 "webdriver.chrome.driver",
                 "chromedriver-linux64/chromedriver");
-        options.setBinary("/usr/bin/google-chrome-stable");
         testUrl = "https://google.com";
         ChromeOptions options = new ChromeOptions();
+        options.setBinary("/usr/bin/google-chrome-stable");
         options.addArguments("--headless=new");
 
         driver = new ChromeDriver(options);
