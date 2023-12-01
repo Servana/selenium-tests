@@ -20,13 +20,11 @@ public class ChromeDriverTest {
         //setup chromedriver
         System.setProperty(
                 "webdriver.chrome.driver",
-                "/usr/bin/google-chrome-stable");
+                "chrome-linux64/chromedriver");
+        chromeOptions.setBinary("/usr/bin/google-chrome-stable");
         testUrl = "https://google.com";
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        options.addArguments("--disable-extensions");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--no-sandbox");
+        options.addArguments("--headless=new");
 
         driver = new ChromeDriver(options);
 
@@ -50,3 +48,5 @@ public class ChromeDriverTest {
     }
 
 }
+
+116.0.5845.179
