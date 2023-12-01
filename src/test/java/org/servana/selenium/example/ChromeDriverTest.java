@@ -20,11 +20,14 @@ public class ChromeDriverTest {
         //setup chromedriver
         System.setProperty(
                 "webdriver.chrome.driver",
-                "/usr/bin/google-chrome");
+                "/usr/bin/google-chrome-stable");
         System.setProperty("DISPLAY", ":99");
         testUrl = "https://google.com";
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
+        options.addArguments("--headless");
+        options.addArguments("--disable-extensions");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
 
         driver = new ChromeDriver(options);
 
