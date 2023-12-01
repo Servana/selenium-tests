@@ -21,7 +21,6 @@ public class ChromeDriverTest {
         System.setProperty(
                 "webdriver.chrome.driver",
                 "/usr/bin/google-chrome-stable");
-        System.setProperty("DISPLAY", ":99");
         testUrl = "https://google.com";
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
