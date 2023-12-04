@@ -1,4 +1,4 @@
-# Selenium tests on Ubuntu Server with Video recording
+# Selenium UI tests on Ubuntu Server with Video recording
 
 This Jenkins pipeline is designed to execute Selenium UI tests using Maven, JDK 11, and ChromeDriver on an Ubuntu Server environment. The pipeline leverages Xvfb (X Virtual Framebuffer) to create a virtual display for running tests and records the test execution as a video using FFmpeg. The primary goal is to provide a visual representation of the test run.
 
