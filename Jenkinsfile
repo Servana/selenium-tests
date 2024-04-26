@@ -38,7 +38,7 @@ def usexvfb(){
 def downloadChromeDriver(){
     sh """
         #Download the ChromeDriver package
-        wget -O /tmp/chrome-linux64.zip https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/linux64/chromedriver-linux64.zip
+        wget -O /tmp/chrome-linux64.zip https://storage.googleapis.com/chrome-for-testing-public/121.0.6167.184/linux64/chromedriver-linux64.zip
         unzip /tmp/chrome-linux64.zip
         chmod +x chromedriver-linux64/chromedriver
     """
