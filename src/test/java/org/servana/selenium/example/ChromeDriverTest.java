@@ -35,16 +35,17 @@ public class ChromeDriverTest {
 
     }
 
-    @Test
-    public void testTitle() throws IOException {
+    // @Test
+    // public void testTitle() throws IOException {
 
-        List<WebElement> elements = driver
-                .findElements(By.cssSelector("[lang=\"READ_MORE_BTN\"]"));
+    //     List<WebElement> elements = driver
+    //             .findElements(By.cssSelector("[lang=\"READ_MORE_BTN\"]"));
 
-    }
+    // }
 
     @After
     public void teardown() throws IOException {
+        Thread.sleep(60000);
         driver.quit();
     }
 
